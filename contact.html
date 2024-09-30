@@ -5,9 +5,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="style.css" />
+		<script defer src="scripts/darkMode.js"></script>
+		<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 	</head>
-	<body>
+	<body class="light-mode">
+		
 		<div class="header whiteBG">
+			<button onclick="darkMode()" id="dark-mode-button">
+				<lord-icon
+					src="https://cdn.lordicon.com/dkowjmhq.json"
+					trigger="click"
+					delay="2000"
+					colors="primary:#b4b4b4,secondary:#f7cd8f,tertiary:#000000"
+					id="dark-mode-icon">
+				</lord-icon>
+			</button>
 			<header class="center">
 				<a class="link" href="https://bradyhodge.dev/"><h1>baileehodge.com</h1></a>
 			</header>
@@ -26,6 +38,5 @@
 				<div class="grid-item"><image class="images" src="images/contact_girl.png"><p class=""></p></div>
 			</div>
 		</main> 
-			<script src=""></script>
 
 	</body>

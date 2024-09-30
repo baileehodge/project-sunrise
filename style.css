@@ -1,7 +1,19 @@
-
+#dark-mode-button {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    border: none;
+    float: left;
+}
+#dark-mode-icon {
+    width:50px;
+    height:50px;
+}
 .link {
     color: #000000;
     text-decoration: underline;
+}
+.dark-mode-link {
+    color: #eff6ff;;
 }
 .center {
     margin: auto;
@@ -21,7 +33,22 @@
 }
 body {
     font-family: 'Andalé Mono', monospace;
+}
+/* why do I exist */
+.light-mode {
     background-color: #eff6ff;
+    color: #000000;
+}
+.whiteBG {
+    background-color: white;
+}
+.dark-mode {
+    background-color: black;
+    color: #eff6ff;
+}
+.darkBG {
+    background-color: #405066;
+    color: #eff6ff;
 }
 h1 {
     font-size: 5vw;
@@ -90,17 +117,20 @@ li a:hover:not(.active) {
     grid-row-end: 3;
 }
 
-.whiteBG {
-    background-color: white;
-}
 @media only screen and (min-width: 640px) {
     .grid-container {
         display: grid;
         grid-template-columns: auto auto;
         padding: 10px;
     }  
+    #dark-mode-icon {
+        width:75px;
+        height:75px;
+    }
 }
-@media only screen and (min-width: 768PX) {
+
+@media only screen and (min-width: 769PX) {
+                                /* lol^ */
     P {
         font-size: 1.5vw;
         letter-spacing: .4vw;
@@ -115,6 +145,10 @@ li a:hover:not(.active) {
     li a {
         font-size: 1.5vw;
         letter-spacing: .3vw;
+    }
+    #dark-mode-icon {
+        width:150px;
+        height:150px;
     }
 }
 
